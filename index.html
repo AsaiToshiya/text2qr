@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>text2qr</title>
+  </head>
+  <body>
+    <h1>text2qr</h1>
+    <textarea id="textarea" rows="4" cols="50"></textarea><br />
+    <button onclick="handleClick()">generate</button>
+    <div>
+      <canvas id="qr"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+    <script>
+      const handleClick = () =>
+        new QRious({
+          element: document.getElementById("qr"),
+          value: document.getElementById("textarea").value,
+          size: 250,
+        });
+    </script>
+  </body>
+</html>
