@@ -20,6 +20,10 @@
           value: document.getElementById("textarea").value,
           size: 250,
         });
+
+      const params = new URLSearchParams(location.search);
+      textarea.value = params.get("text");
+      textarea.value && handleClick();
     </script>
   </body>
 </html>
