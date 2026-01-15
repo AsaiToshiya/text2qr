@@ -1,5 +1,7 @@
 # text2qr
 
+text2qr is a web-based tool that allows users to quickly generate QR codes from text input.
+
 <kbd>![screenshot.png](screenshot.png)</kbd>
 
 ## License
